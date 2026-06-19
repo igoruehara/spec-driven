@@ -24,12 +24,29 @@ alwaysApply: false
 <Estilo real (monolito, serviços, big ball of mud?), camadas, acoplamentos perigosos,
 pontos de entrada. Onde o domínio está misturado com infra?>
 
+## Estrutura de pastas
+<Como o código se organiza (por camada? por feature? por tipo?), onde estão os pontos de
+entrada, e o que destoa do esperado.>
+
+## Convenções de código
+<Padrões reais observados: nomenclatura, estilo, tratamento de erro, padrões de teste.
+O que é convenção tácita (não escrita) e deveria ir para o `CLAUDE.md`?>
+
 ## Bounded contexts implícitos
 > Inferidos do código/estrutura — raramente explícitos em brownfield.
 
 | Contexto (inferido) | Onde vive no código | Core/Support/Generic | Fronteira clara? |
 |---------------------|---------------------|----------------------|------------------|
 | <…>                 | <pasta/módulo>      | <…>                  | não / parcial    |
+
+## Testes & CI
+<Tipos de teste existentes, cobertura aproximada, o que a CI roda, comandos de gate.
+Alimenta o `docs/engineering/TESTING.md`.>
+
+## Integrações
+| Integração       | Tipo (API/lib/fila) | Como é usada            | Risco/acoplamento |
+|------------------|---------------------|-------------------------|-------------------|
+| <ex.: gateway X> | REST                | <…>                     | <…>               |
 
 ## Maturidade nos 5 eixos
 | Eixo            | Estado atual                  | Gap vs padrão SDD        | Risco |

@@ -44,6 +44,7 @@ As 8 skills do boilerplate, uma responsabilidade cada:
 | **`/revisar-pr`** | gate de conformidade SDD no PR/MR (posta via MCP) |
 | **`/setup-ci`** | pipeline CI/CD que materializa os gates SDD |
 | **`/metricas`** | Lead Time · Throughput · maturidade de CD → `metrics.md` |
+| **`/auditar`** | valida conformidade da esteira (frontmatter, links, rastreabilidade) |
 | **`/handoff`** | pausa/retoma via `docs/STATE.md` (continuidade) |
 
 - *Tools-aware* (geradas pela `/camada-agentica` se o MCP existir): **`/spec-to-jira`**, **`/publicar-confluence`**.
@@ -55,6 +56,9 @@ As 8 skills do boilerplate, uma responsabilidade cada:
   aceite derivados da `spec.md`. É aqui que o gate SDD vira pipeline.
 - **Gate de PR/MR** (`/revisar-pr`): conformidade de processo na revisão, complementando o
   `/code-review` do harness (que caça bugs).
+- **Conformidade da esteira** (`.github/workflows/esteira.yml` → `scripts/audit-esteira.mjs`):
+  valida frontmatter, links e specs em todo PR. O `/auditar` é o complemento com julgamento
+  (rastreabilidade, specs órfãs, DoD).
 
 ## Como os insumos afinam cada artefato
 | Insumo do kickoff               | Afina                                                   |

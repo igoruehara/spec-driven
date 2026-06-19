@@ -82,6 +82,12 @@ pelo `description` quando a tarefa exigir (TESTING, glossary, context-map, ADRs,
   subagentes (ver `docs/engineering/_templates/subagent.template.md`), que recebem só a task +
   spec + TESTING e devolvem um report-back estruturado. Reserve a janela para o trabalho.
 
+### Orçamento de contexto (alvo)
+- **Base (`alwaysApply: true`): ~15k tokens.** Mantenha enxuto — se crescer, é sinal de mover
+  detalhe para docs on-demand.
+- **Sob demanda: só o necessário.** Total carregado **< 40k**; reserve **160k+** para o trabalho.
+- Estourou o orçamento? **Delegue a subagente** (contexto isolado) em vez de inchar a sessão.
+
 ## Divergência da spec (SPEC_DEVIATION)
 Se durante a implementação você precisar fazer diferente do que a `spec.md` diz:
 1. **Pare antes de seguir.** Marque no código/PR um comentário `// SPEC_DEVIATION: <motivo>`.

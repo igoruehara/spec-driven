@@ -1,0 +1,21 @@
+# Gate de conformidade da esteira SDD.
+# Falha o PR se a estrutura violar o padrão (frontmatter, links, specs).
+# Complemente com os gates de teste/cobertura do seu pipeline (ver /setup-ci e docs/engineering/TESTING.md).
+name: esteira
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  audit:
+    name: Auditoria da esteira
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validar estrutura da esteira
+        run: node scripts/audit-esteira.mjs .
