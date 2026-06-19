@@ -1,6 +1,6 @@
 {
   "name": "@igoruehara/spec-driven",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Scaffold de Spec-Driven Development (SDD) para Claude Code — esteira Lean Inception + DDD + Technical Design Docs, com skills, templates e gates de qualidade. Use via npx em qualquer projeto.",
   "type": "module",
   "bin": {
