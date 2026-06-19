@@ -61,22 +61,6 @@ Arquivos já existentes no destino são **mantidos** por padrão — seguro roda
 2. No Claude Code: `/integracoes` (se já conhece o ferramental) → `/kickoff`.
 3. Comece a primeira feature com `/nova-feature`.
 
-## Desenvolvimento do próprio pacote
-
-O conteúdo scaffoldado vive em [`template/`](template/). Edite ali. Para testar localmente:
-
-```bash
-node bin/cli.mjs .tmp-test --yes   # scaffolda numa pasta de teste
-npm pack --dry-run                 # confere o que vai pro npm (inclui template/.claude)
-```
-
-Publicar no npm:
-
-```bash
-npm login
-npm publish        # publishConfig.access=public já está no package.json
-```
-
 ## Licença
 
 MIT
