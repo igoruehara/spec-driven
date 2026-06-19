@@ -8,6 +8,17 @@ alwaysApply: true
 
 Este projeto segue **Spec-Driven Development (SDD)**. Leia antes de implementar qualquer coisa.
 
+## Início de sessão — carregue o contexto base
+> Esta diretiva é o que **efetiva** o `alwaysApply: true` no Claude Code (que não honra a flag
+> sozinho). Como este `CLAUDE.md` é sempre carregado, ele é quem dispara o carregamento da base.
+
+**Antes da primeira tarefa, leia (se existirem) os docs `alwaysApply: true`:**
+`docs/STATE.md` · `docs/product/vision.md` · `docs/product/roadmap.md` · e a `spec.md` da
+feature ativa em `specs/`. Esse é o contexto base.
+
+Todos os outros docs são `alwaysApply: false` — **não os leia agora**. Puxe cada um **sob demanda**,
+quando a tarefa exigir, guiado pelo `description` no frontmatter dele.
+
 ## A spec é a fonte da verdade
 - Implemente **a partir de** `specs/NNNN-*/spec.md`. Os critérios de aceite
   (Given/When/Then) são o contrato e o oráculo de teste.
