@@ -1,6 +1,6 @@
 {
   "name": "@igoruehara/spec-driven",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Scaffold de Spec-Driven Development (SDD) para agentes de IA (Claude Code, Codex, Cursor, Copilot, Gemini, Windsurf) — esteira Lean Inception + DDD + Technical Design Docs, com skills, templates e gates de qualidade. Use via npx em qualquer projeto.",
   "type": "module",
   "bin": {

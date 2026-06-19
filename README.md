@@ -12,14 +12,15 @@ npx @igoruehara/spec-driven
 # ou criando numa pasta nova
 npx @igoruehara/spec-driven meu-projeto
 
-# não-interativo: escolha os clientes pela flag
-npx @igoruehara/spec-driven --agent=codex,cursor   # Claude (sempre) + Codex + Cursor
+# não-interativo: escolha os clientes pela flag (ao menos um é obrigatório)
+npx @igoruehara/spec-driven --agent=claude,cursor   # Claude + Cursor
 ```
 
 ## Clientes suportados
 
-O **Claude é a fonte canônica** (sempre gerado, formato mais rico). Os demais clientes são
-**views geradas a partir do mesmo conteúdo** — escolha quais no menu interativo ou via `--agent`.
+O **Claude é a fonte canônica** do conteúdo (formato mais rico), mas é um **cliente escolhível
+como qualquer outro** — nenhum entra por padrão e é obrigatório selecionar ao menos um. Os demais
+clientes são **views geradas a partir do mesmo conteúdo** — escolha quais no menu interativo ou via `--agent`.
 
 | Cliente | Instruções | Skills / commands |
 |---|---|---|
@@ -115,10 +116,10 @@ npx @igoruehara/spec-driven update         # atualiza só a esteira, preserva se
 
 | Opção             | O que faz                                                              |
 |-------------------|-----------------------------------------------------------------------|
-| `--agent=a,b`     | clientes extras a gerar (`codex,cursor,copilot,gemini,windsurf`); pula o menu |
-| `--all`           | gera as views de **todos** os clientes suportados                     |
+| `--agent=a,b`     | clientes a gerar (`claude,codex,cursor,copilot,gemini,windsurf`); pula o menu; exige ≥ 1 |
+| `--all`           | gera as views de **todos** os clientes suportados (inclui Claude)     |
 | `--force`         | sobrescreve arquivos que já existem                                   |
-| `--yes`, `-y`     | pula a confirmação interativa (sem `--agent`, gera só Claude)         |
+| `--yes`, `-y`     | pula a confirmação interativa (exige `--agent=` ou `--all` p/ saber os clientes) |
 
 > No `update`, `--agent=` **adiciona** um cliente novo a um projeto já existente (ex.:
 > `npx @igoruehara/spec-driven update --agent=codex` materializa o Codex e o mantém atualizado).

@@ -1,6 +1,8 @@
 // Adapters de cliente de IA — como materializar o template canônico (layout Claude)
-// para cada ferramenta. O Claude é a FONTE da verdade e é sempre emitido; os demais
-// clientes são "views" geradas a partir dele (mesmo conteúdo, outro formato/local).
+// para cada ferramenta. O Claude é a FONTE da verdade (o conteúdo do pacote está no
+// formato dele) e os demais clientes são "views" geradas a partir dele. O Claude em si
+// é opcional na saída: é um item escolhível como qualquer outro — quando não selecionado,
+// suas views (CLAUDE.md + .claude/) não são gravadas, mas seguem servindo de fonte.
 //
 // Mapa (instruções · skills/commands):
 //   Claude   CLAUDE.md                        .claude/skills/<n>/SKILL.md   (canônico, verbatim)
@@ -47,7 +49,7 @@ const skillAsToml = (raw) => {
 // ── Registry ─────────────────────────────────────────────────────────────────
 
 export const ADAPTERS = {
-  claude: { id: "claude", label: "Claude Code", canonical: true },
+  claude: { id: "claude", label: "Claude Code", canonical: true, hint: "CLAUDE.md + .claude/" },
   codex: {
     id: "codex", label: "OpenAI Codex",
     instructions: { to: "AGENTS.md", frontmatter: "strip" },
@@ -75,8 +77,10 @@ export const ADAPTERS = {
   },
 };
 
-// Clientes adicionais (tudo menos o Claude canônico) — opções do menu / da flag --agent.
-export const EXTRA_AGENTS = Object.values(ADAPTERS).filter((a) => !a.canonical);
+// Todos os clientes escolhíveis (Claude primeiro) — opções do menu / da flag --agent.
+export const ALL_AGENTS = Object.values(ADAPTERS);
+// Clientes que geram "views" (tudo menos o Claude canônico) — usado na emissão.
+export const EXTRA_AGENTS = ALL_AGENTS.filter((a) => !a.canonical);
 export const isValidAgent = (id) => Object.prototype.hasOwnProperty.call(ADAPTERS, id);
 
 // Gera o conteúdo do arquivo de instruções de um adapter a partir do CLAUDE.md canônico.
