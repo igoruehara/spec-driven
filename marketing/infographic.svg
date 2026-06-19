@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1320" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <style>
+      .t{fill:#1f2937} .m{fill:#64748b} .w{fill:#ffffff} .mono{font-family:Consolas,'Courier New',monospace}
+    </style>
+  </defs>
+
+  <rect width="1080" height="1320" fill="#eef1f7"/>
+
+  <!-- HEADER -->
+  <rect x="40" y="36" width="1000" height="190" rx="20" fill="#0e1430"/>
+  <text x="72" y="108" class="w" font-size="50" font-weight="700">Spec-Driven Development</text>
+  <text x="72" y="150" font-size="23" fill="#c7d2fe">uma CLI open source para estruturar o SDD no Claude Code</text>
+  <text x="72" y="190" class="mono" font-size="20" fill="#93c5fd">npx @igoruehara/spec-driven</text>
+  <rect x="838" y="62" width="166" height="42" rx="21" fill="#22c55e"/>
+  <text x="921" y="89" class="w" font-size="18" font-weight="700" text-anchor="middle">OPEN SOURCE</text>
+
+  <!-- METHODOLOGY FLOW -->
+  <text x="44" y="262" class="m" font-size="16" font-weight="700" letter-spacing="1">DA IDEIA AO CÓDIGO, RASTREÁVEL</text>
+  <g font-size="20" font-weight="700" text-anchor="middle">
+    <rect x="40"  y="278" width="216" height="66" rx="12" fill="#7c3aed"/>
+    <text x="148" y="312" class="w">Lean Inception</text><text x="148" y="333" class="w" font-size="13" font-weight="400">descobrir</text>
+    <rect x="286" y="278" width="216" height="66" rx="12" fill="#14b8a6"/>
+    <text x="394" y="312" class="w">DDD</text><text x="394" y="333" class="w" font-size="13" font-weight="400">modelar</text>
+    <rect x="532" y="278" width="216" height="66" rx="12" fill="#f97316"/>
+    <text x="640" y="312" class="w">TDD</text><text x="640" y="333" class="w" font-size="13" font-weight="400">desenhar</text>
+    <rect x="778" y="278" width="216" height="66" rx="12" fill="#ec4899"/>
+    <text x="886" y="312" class="w">SDD</text><text x="886" y="333" class="w" font-size="13" font-weight="400">implementar</text>
+  </g>
+  <g fill="#94a3b8" font-size="26" font-weight="700" text-anchor="middle">
+    <text x="271" y="320">›</text><text x="517" y="320">›</text><text x="763" y="320">›</text>
+  </g>
+
+  <!-- STRUCTURE -->
+  <text x="44" y="392" class="m" font-size="16" font-weight="700" letter-spacing="1">ESTRUTURA DO PROJETO</text>
+  <rect x="40" y="408" width="1000" height="430" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <g>
+    <!-- rows: marker + path + desc -->
+    <g>
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#7c3aed"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#7c3aed"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">.claude/skills/</text>
+      <text x="372" y="469" class="m" font-size="18">14 skills — /kickoff, /nova-feature, /validar, /metricas…</text>
+    </g>
+    <g transform="translate(0,46)">
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#3b82f6"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#3b82f6"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">.github + scripts/</text>
+      <text x="372" y="469" class="m" font-size="18">CI da esteira: auditoria + eval de fidelidade spec→código</text>
+    </g>
+    <g transform="translate(0,92)">
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#22c55e"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#22c55e"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">docs/product/</text>
+      <text x="372" y="469" class="m" font-size="18">vision · stakeholders · journeys · features · MVP · roadmap</text>
+    </g>
+    <g transform="translate(0,138)">
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#ec4899"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#ec4899"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">docs/architecture/</text>
+      <text x="372" y="469" class="m" font-size="18">overview (5 eixos) · context-map · diagrams · adr</text>
+    </g>
+    <g transform="translate(0,184)">
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#14b8a6"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#14b8a6"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">docs/engineering/</text>
+      <text x="372" y="469" class="m" font-size="18">TESTING · metrics · integrations · agentic-layer</text>
+    </g>
+    <g transform="translate(0,230)">
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#f97316"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#f97316"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">specs/</text>
+      <text x="372" y="469" class="m" font-size="18">feature: spec · design · domain · tasks (+ quick)</text>
+    </g>
+    <g transform="translate(0,276)">
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#64748b"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#64748b"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">src/</text>
+      <text x="372" y="469" class="m" font-size="18">estrutura em camadas (DDD tático)</text>
+    </g>
+    <g transform="translate(0,322)">
+      <rect x="72" y="452" width="30" height="22" rx="4" fill="#0e1430"/><rect x="72" y="448" width="13" height="6" rx="2" fill="#0e1430"/>
+      <text x="118" y="469" class="t mono" font-size="21" font-weight="700">CLAUDE.md</text>
+      <text x="372" y="469" class="m" font-size="18">regras do agente — contexto base (alwaysApply)</text>
+    </g>
+  </g>
+
+  <!-- DIFFERENTIATORS -->
+  <text x="44" y="884" class="m" font-size="16" font-weight="700" letter-spacing="1">POR QUE É DIFERENTE</text>
+  <g>
+    <rect x="40"  y="902" width="487" height="120" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="64" y="948" font-size="30">🔎</text>
+    <text x="108" y="945" class="t" font-size="22" font-weight="700">A esteira se valida sozinha</text>
+    <text x="64" y="982" class="m" font-size="17">Auditoria estrutural + eval de fidelidade</text>
+    <text x="64" y="1004" class="m" font-size="17">spec→código rodando na CI (gate de PR).</text>
+
+    <rect x="553" y="902" width="487" height="120" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="577" y="948" font-size="30">🧭</text>
+    <text x="621" y="945" class="t" font-size="22" font-weight="700">Da ideia ao código</text>
+    <text x="577" y="982" class="m" font-size="17">Lean Inception + DDD + Technical Design</text>
+    <text x="577" y="1004" class="m" font-size="17">Docs + SDD numa única esteira.</text>
+
+    <rect x="40"  y="1034" width="487" height="120" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="64" y="1080" font-size="30">🔐</text>
+    <text x="108" y="1077" class="t" font-size="22" font-weight="700">MCPs com segurança</text>
+    <text x="64" y="1114" class="m" font-size="17">Jira, Confluence, Notion — com trava de</text>
+    <text x="64" y="1136" class="m" font-size="17">conta/workspace (não vaza no pessoal).</text>
+
+    <rect x="553" y="1034" width="487" height="120" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="577" y="1080" font-size="30">📊</text>
+    <text x="621" y="1077" class="t" font-size="22" font-weight="700">Continuidade &amp; métricas</text>
+    <text x="577" y="1114" class="m" font-size="17">STATE/handoff entre sessões + Lead Time,</text>
+    <text x="577" y="1136" class="m" font-size="17">Throughput e maturidade de CD.</text>
+  </g>
+
+  <!-- FOOTER -->
+  <rect x="40" y="1176" width="1000" height="108" rx="16" fill="#0e1430"/>
+  <text x="72" y="1218" class="w" font-size="20" font-weight="700">Comece agora:</text>
+  <text x="72" y="1252" class="mono" font-size="22" fill="#86efac">npx @igoruehara/spec-driven</text>
+  <text x="1008" y="1224" class="w" font-size="18" text-anchor="end" opacity="0.7">100% open source</text>
+  <text x="1008" y="1252" class="mono" font-size="18" fill="#93c5fd" text-anchor="end">github.com/igoruehara/spec-driven</text>
+</svg>
