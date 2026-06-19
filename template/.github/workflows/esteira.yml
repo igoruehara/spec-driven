@@ -19,3 +19,5 @@ jobs:
           node-version: 20
       - name: Validar estrutura da esteira
         run: node scripts/audit-esteira.mjs .
+      - name: Eval de fidelidade spec→implementação
+        run: node scripts/eval-spec-fidelity.mjs .

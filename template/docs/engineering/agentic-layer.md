@@ -45,6 +45,7 @@ As 8 skills do boilerplate, uma responsabilidade cada:
 | **`/setup-ci`** | pipeline CI/CD que materializa os gates SDD |
 | **`/metricas`** | Lead Time · Throughput · maturidade de CD → `metrics.md` |
 | **`/auditar`** | valida conformidade da esteira (frontmatter, links, rastreabilidade) |
+| **`/evals`** | fidelidade spec→código (AC por task/teste, SPEC_DEVIATION) |
 | **`/handoff`** | pausa/retoma via `docs/STATE.md` (continuidade) |
 
 - *Tools-aware* (geradas pela `/camada-agentica` se o MCP existir): **`/spec-to-jira`**, **`/publicar-confluence`**.

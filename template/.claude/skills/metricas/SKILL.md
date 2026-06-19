@@ -42,6 +42,8 @@ números que faltarem. Cite a origem.
 ## Saída
 - Atualize `docs/engineering/metrics.md` (tabelas + tendência + data e período).
 - Resuma: Lead Time (mediana/p85), Throughput (total + tendência), maturidade CD e o gargalo nº 1.
+- **Realimente o `/roadmap`:** o Throughput recente é a **capacidade observada** — não planeje
+  ondas além da vazão real do time.
 
 > Contexto: Lead Time e Deployment Frequency são métricas **DORA**; Throughput é métrica de fluxo.
 > Olhe a **tendência**, não o número isolado.

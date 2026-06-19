@@ -29,9 +29,9 @@ Encadeadas: **Lean Inception** (descobrir) → **DDD** (modelar) → **TDD** (de
 seu-projeto/
 ├── CLAUDE.md                  # convenções que o agente segue (verificação de conhecimento, camadas, DoD)
 ├── README.md                  # o manual da esteira SDD
-├── .claude/skills/            # 13 skills (ver abaixo)
+├── .claude/skills/            # 14 skills (ver abaixo)
 ├── .github/workflows/         # esteira.yml — gate de conformidade na CI
-├── scripts/                   # audit-esteira.mjs — validador estrutural
+├── scripts/                   # audit-esteira.mjs + eval-spec-fidelity.mjs
 ├── docs/
 │   ├── glossary.md · STATE.md
 │   ├── product/               # vision · stakeholders · journeys · features · mvp-canvas · roadmap
@@ -57,6 +57,7 @@ seu-projeto/
 | `/setup-ci` | pipeline CI/CD que materializa os gates |
 | `/metricas` | Lead Time, Throughput e maturidade de Continuous Delivery/Deployment |
 | `/auditar` | valida a conformidade da esteira (frontmatter, links, rastreabilidade) |
+| `/evals` | mede fidelidade spec→código (AC cobertos por task/teste, SPEC_DEVIATION) |
 | `/handoff` | pausa/retoma a sessão via `docs/STATE.md` |
 
 ## Uso

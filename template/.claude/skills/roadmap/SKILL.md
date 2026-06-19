@@ -12,6 +12,8 @@ Princípio: **quick wins de baixo risco primeiro** para gerar tração e confian
 - **Greenfield:** `vision.md`, `mvp-canvas.md` (features sequenciadas por valor × esforço).
 - **Brownfield:** `assessment.md` (dívidas/riscos e gaps dos 5 eixos) → itens de melhoria.
 - **Sempre:** `docs/STATE.md` (todos soltos, ideias adiadas) e pendências de `integrations.md`.
+- **Capacidade:** Throughput recente em `docs/engineering/metrics.md` (via `/metricas`) — dimensione
+  as ondas pela **vazão real**, não pelo otimismo.
 
 ## Construa
 - Horizontes **Now / Next / Later** (datas só no "Agora" — evita falsa precisão).
