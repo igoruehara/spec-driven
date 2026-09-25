@@ -137,6 +137,10 @@ npx @igoruehara/spec-driven update         # atualiza só a esteira, preserva se
 3. Rode `/integracoes` (se já conhece o ferramental) → `/kickoff`.
 4. Comece a primeira feature com `/nova-feature`.
 
+## Ferramentas Complementares
+
+- [MySpec](https://myspec.dev) — Plataforma interativa de Spec-Driven Development que guia a descoberta de requisitos e compila bundles de 4 arquivos (`constitution.md`, `requirements.md`, `solution.md`, `tasks.md`) integrados aos agentes via MCP.
+
 ## Licença
 
 MIT
